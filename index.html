@@ -1,7 +1,7 @@
 <html lang="en"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Green Geno</title>
+  <title>CBD OIL</title>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
   <style>
     /* Editor styles - simple and clean */
@@ -35,8 +35,8 @@
 
       <div id="actionMenu" class="action-menu" role="menu" aria-hidden="true">
         <a href="#menu" id="scrollToMenu" class="action-item" role="menuitem">Browse Menu</a>
-        <a href="#" id="openMenu" class="action-item" role="menuitem">Order Now</a>
-        <a href="https://wa.me/+27681215408" class="action-item" download="" role="menuitem"></a>
+        <a href="#" id="openMenu" class="action-item" role="menuitem">View Full Menu</a>
+        <a href="https://tiffyai-usd.github.io/Papa_Rons_Cafe/menu1.pdf" class="action-item" download="" role="menuitem">Download Menu PDF</a>
       </div>
     </div>
   </header>
@@ -44,7 +44,7 @@
   <div id="menuLightbox" class="lightbox" aria-hidden="true">
     <div class="box">
       <div class="close" id="closeMenu" title="Close">X</div>
-      <img src="https://wa.me/+27681215408" alt="Order Now">
+      <img src="https://tiffyai-usd.github.io/Papa_Rons_Cafe/menu1.jpeg" alt="Full Menu">
       <div style="margin-top:1rem; color:#d4a373; font-family:'Bebas Neue',cursive; font-size:1.05rem;">
         WhatsApp your order: <a href="https://wa.me/+27681215408" style="color:#25D366;">+ 27681215408</a>
       </div>
@@ -60,7 +60,7 @@
           <p class="desc">Creamy chicken, bacon, mushrooms, cheese</p>
           <div class="price">R135.00</div>
           <div class="row">
-            <a class="drinks-link" href="https://wa.me/+27681215408" target="_blank" rel="noopener">Enquire</a>
+            <a class="drinks-link" href="https://tiffyai-usd.github.io/Papa_Rons_Cafe/drinks-menu.html" target="_blank" rel="noopener">ADD DRINKS</a>
             <div class="qty-controls">
               <div class="qty-btn" data-key="pizzasGrid-0" data-change="-1">−</div>
               <div class="qty-num" id="qty-pizzasGrid-0">0</div>
@@ -75,7 +75,7 @@
           <p class="desc">Ham, pineapple, cheese</p>
           <div class="price">R135.00</div>
           <div class="row">
-            <a class="drinks-link" href="https://wa.me/+27681215408" target="_blank" rel="noopener">Enquire</a>
+            <a class="drinks-link" href="https://tiffyai-usd.github.io/Papa_Rons_Cafe/drinks-menu.html" target="_blank" rel="noopener">ADD DRINKS</a>
             <div class="qty-controls">
               <div class="qty-btn" data-key="pizzasGrid-1" data-change="-1">−</div>
               <div class="qty-num" id="qty-pizzasGrid-1">0</div>
@@ -588,19 +588,19 @@
     const pizzas = [
   {
     "name": "DINAFEM",
-    "price": ,
+    "price": null,
     "img": "https://tiffyai-usd.github.io/Green-Geno/Dinafem3.jpg",
     "desc": "Purple Orange CBD 5"
   },
   {
     "name": "DINAFEM",
-    "price": ,
+    "price": null,
     "img": "https://tiffyai-usd.github.io/Green-Geno/Dinafem2.jpg",
     "desc": "Critical Mass CBD"
   },
   {
     "name": "DINAFEM",
-    "price": ,
+    "price": null,
     "img": "https://tiffyai-usd.github.io/Green-Geno/Dinafem.jpg",
     "desc": "Bubba Cush CBD"
   }
@@ -699,7 +699,7 @@ const sides = [
     "desc": "Perfectly balanced ratios"
   },
   {
-    "name": "Dinafem",
+    "name": "CBD OIL",
     "price": 999,
     "img": "https://tiffyai-usd.github.io/Green-Geno/p18.jpg",
     "desc": "Varieties"
@@ -713,7 +713,7 @@ const sides = [
 ];function createMenuCard(item, key) {
       const div = document.createElement('div');
       div.className = 'menu-item';
-      const priceHtml = item.price === null ? `<div class="price">5 for R60 · 10 for R100</div>` : `<div class="price">R${item.price}.00</div>`;
+      const priceHtml = item.price === null ? `<div class="price">More info on chat</div>` : `<div class="price">R${item.price}.00</div>`;
       div.innerHTML = `
         <img src="${item.img}" alt="${item.name}">
         <div class="card">
@@ -721,7 +721,7 @@ const sides = [
           <p class="desc">${item.desc}</p>
           ${priceHtml}
           <div class="row">
-            <a class="drinks-link" href="https://wa.me/+27681215408" target="_blank" rel="noopener">Enquire</a>
+            <a class="drinks-link" href="https://wa.me/+27681215408" target="_blank" rel="noopener">Enquire more info</a>
             <div class="qty-controls">
               <div class="qty-btn" data-key="${key}" data-change="-1">−</div>
               <div class="qty-num" id="qty-${key}">0</div>
